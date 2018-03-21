@@ -29,7 +29,7 @@ module Librarian::BookManagement::BookManagementHelper
   end
 
   class Create < Base
-    include Librarian::BookManagement::IndexHelper
+    include Librarian::BookManagement::CreateHelper
 
     def initialize(options)
       super(options)

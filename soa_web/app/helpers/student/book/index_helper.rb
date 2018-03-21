@@ -1,4 +1,4 @@
-module Librarian::BookManagement::IndexHelper
+module Student::Book::IndexHelper
   def process
     get_book_list
 
@@ -11,8 +11,8 @@ module Librarian::BookManagement::IndexHelper
 
   def generate_status
     @status = {
-      :code    => Settings.code.success,
-      :message => "Thành công",
+      :code => Settings.code.success,
+      :message => "",
       :data    => {
         :page     => @params[:page],
         :per_page => Settings.per_page,

@@ -1,12 +1,10 @@
-module Student::BookBorrow::BookBorrowHelper
+module Student::Book::BookHelper
   def pre_processing
     case action_name
-    when 'create'
-      @action = Create.new(params: params)
+    when 'show'
+      @action = Show.new(params: params)
     when 'index'
       @action = Index.new(params: params)
-    when 'destroy'
-      @action = Destroy.new(params: params)
     end
 
     implementation
@@ -24,24 +22,16 @@ module Student::BookBorrow::BookBorrowHelper
     end
   end
 
-  class Create < Base
-    include Librarian::BookManagement::CreateHelper
-
-    def initialize(options)
-      super(options)
-    end
-  end
-
   class Index < Base
-    include Librarian::BookManagement::IndexHelper
+    include Student::Book::IndexHelper
 
     def initialize(options)
       super(options)
     end
   end
 
-  class Destroy < Base
-    include Librarian::BookManagement::DestroyHelper
+  class Show < Base
+    include Student::Book::ShowHelper
 
     def initialize(options)
       super(options)
