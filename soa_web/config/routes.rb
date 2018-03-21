@@ -5,7 +5,9 @@ Rails.application.routes.draw do
     namespace :v1 do
       namespace :student do
         resource :book_borrow, only: [:create, :index, :show, :destroy]
+        resource :books, only: [:index, :show]
       end
+
       namespace :librarian do
         resource :book_management, only: [:create, :index, :show, :update, :destroy]
       end

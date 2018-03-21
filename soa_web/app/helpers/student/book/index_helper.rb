@@ -1,4 +1,4 @@
-module Librarian::BookManagement::IndexHelper
+module Student::Book::IndexHelper
   def process
     get_book_list
 

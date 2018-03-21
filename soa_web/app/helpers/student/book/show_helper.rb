@@ -1,4 +1,4 @@
-module Librarian::BookManagement::ShowHelper
+module Student::Book::ShowHelper
   def process
     get_book
 

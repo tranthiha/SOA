@@ -33,6 +33,8 @@ module Student::BookBorrow::BookBorrowHelper
 
     def initialize(options)
       super(options)
+
+      @book = Book.find_by(id: @params[:book_id])
     end
   end
 

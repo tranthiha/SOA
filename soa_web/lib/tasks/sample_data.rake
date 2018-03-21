@@ -6,7 +6,7 @@ namespace :sample_data do
     Student.create(username: "student")
 
     puts "Create Books"
-    book_data = JSON.parse(File.read("#{Rails.root.to_s}/lib/tasks/book.json"))
+    book_data = JSON.parse(File.read("#{Rails.root.to_s}/lib/tasks/books.json"))
     book_data.each do |book|
       Book.bulk_insert do |worker|
         worker.add(
@@ -15,7 +15,7 @@ namespace :sample_data do
           :language => book['language'],
           :pages    => book['pages'].to_s,
           :title    => book['title'],
-          :year     => Time.new(book['year'].to_s),
+          :year     => Time.new(book['year']),
           :quantity => book['quantity']
         )
       end
