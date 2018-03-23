@@ -1,4 +1,4 @@
-class Api::V1::BookManagementController < ApplicationController
+class Api::V1::Librarian::BookManagementController < ApplicationController
   before_action :authenticate_request!
   skip_before_action :verify_authenticity_token
   before_action -> {pre_processing}
