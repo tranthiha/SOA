@@ -6,10 +6,10 @@ module Student::BookBorrow::CreateHelper
   end
 
   def create_book_borrow
-    BookBorrow.transaction do
-      BookBorrow.create(@params)
+    ::BookBorrow.transaction do
+      ::BookBorrow.create(@params)
 
-      Book.find_by(id: @params[:book_id])
+      ::Book.find_by(id: @params[:book_id])
         .update_attributes(quantity_in_stock: @book.quantity_in_stock - 1)
     end
   end

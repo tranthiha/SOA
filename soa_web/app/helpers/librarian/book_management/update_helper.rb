@@ -6,7 +6,7 @@ module Librarian::BookManagement::UpdateHelper
   end
 
   def update_book_info
-    @updated_book = Book.find_by(id: @params[:id])
+    @updated_book = ::Book.find_by(id: @params[:id])
     @updated_book.update_attributes(update_book_params)
   end
 

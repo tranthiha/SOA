@@ -6,7 +6,7 @@ module Student::Book::IndexHelper
   end
 
   def get_book_list
-    @books = Book.all.paginate(page: @params[:page], per_page: Settings.per_page)
+    @books = ::Book.all.paginate(page: @params[:page], per_page: Settings.per_page)
   end
 
   def generate_status
