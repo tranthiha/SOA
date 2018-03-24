@@ -5,12 +5,12 @@ Rails.application.routes.draw do
   namespace :api, defaults: { format: :json } do
     namespace :v1 do
       namespace :student do
-        resource :book_borrow, only: [:create, :index, :destroy]
-        resource :books, only: [:index, :show]
+        resources :book_borrows, only: [:create, :index, :destroy]
+        resources :books, only: [:index, :show]
       end
 
       namespace :librarian do
-        resource :book_management, only: [:create, :index, :show, :update, :destroy]
+        resources :book_managements, only: [:create, :index, :show, :update, :destroy]
       end
     end
   end
