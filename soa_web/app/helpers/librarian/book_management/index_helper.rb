@@ -14,9 +14,10 @@ module Librarian::BookManagement::IndexHelper
       :code    => Settings.code.success,
       :message => "Thành công",
       :data    => {
-        :page     => @params[:page],
-        :per_page => Settings.per_page,
-        :books    => @books
+        :page          => @params[:page],
+        :per_page      => Settings.per_page,
+        :books         => @books,
+        :total_entries => @books.total_entries
       },
     }
   end
