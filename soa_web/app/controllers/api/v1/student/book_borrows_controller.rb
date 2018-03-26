@@ -1,4 +1,4 @@
-class Api::V1::Student::BookBorrowController < ApplicationController
+class Api::V1::Student::BookBorrowsController < ApplicationController
   skip_before_action :verify_authenticity_token
   before_action -> {pre_processing}
 
