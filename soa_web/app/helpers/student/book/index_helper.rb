@@ -6,12 +6,13 @@ module Student::Book::IndexHelper
   end
 
   def get_book_list
-    @books = ::Book.all.paginate(page: @params[:page], per_page: Settings.per_page)
+    @books = ::Book.where("books.title like '%#{@params[:keyword]}%'")
+      .paginate(page: @params[:page], per_page: Settings.per_page)
   end
 
   def generate_status
     @status = {
-      :code => Settings.code.success,
+      :code    => Settings.code.success,
       :message => "",
       :data    => {
         :page          => @params[:page],
