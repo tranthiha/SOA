@@ -7,10 +7,10 @@ module Student::BookBorrow::CreateHelper
 
   def create_book_borrow
     ::BookBorrow.transaction do
-      ::BookBorrow.create(@params)
+      ::BookBorrow.create(create_book_borrow_params)
 
-      ::Book.find_by(id: @params[:book_id])
-        .update_attributes(quantity_in_stock: @book.quantity_in_stock - 1)
+      @book = ::Book.find_by(id: @params[:book_id])
+      @book.update_attributes(quantity_in_stock: @book.quantity_in_stock - 1)
     end
   end
 
@@ -19,5 +19,10 @@ module Student::BookBorrow::CreateHelper
       :code => Settings.code.success,
       :message => "Thành công"
     }
+  end
+
+  private
+  def create_book_borrow_params
+    @params.permit(:user_id, :book_id)
   end
 end
