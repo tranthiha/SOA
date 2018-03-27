@@ -34,28 +34,6 @@
   },
   {
     "author": "Unknown",
-    "country": "Sumer and Akkadian Empire",
-    "imageLink": "images/the-epic-of-gilgamesh.jpg",
-    "language": "Akkadian",
-    "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
-    "pages": 160,
-    "title": "The Epic Of Gilgamesh",
-    "year": -1700,
-    "quantity": 100
-  },
-  {
-    "author": "Unknown",
-    "country": "Achaemenid Empire",
-    "imageLink": "images/the-book-of-job.jpg",
-    "language": "Hebrew",
-    "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
-    "pages": 176,
-    "title": "The Book Of Job",
-    "year": -600,
-    "quantity": 100
-  },
-  {
-    "author": "Unknown",
     "country": "India/Iran/Iraq/Egypt/Tajikistan",
     "imageLink": "images/one-thousand-and-one-nights.jpg",
     "language": "Arabic",
@@ -318,17 +296,17 @@
     "year": 1952,
     "quantity": 100
   },
-  {
-    "author": "Euripides",
-    "country": "Greece",
-    "imageLink": "images/medea.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
-    "pages": 104,
-    "title": "Medea",
-    "year": -431,
-    "quantity": 100
-  },
+  // {
+  //   "author": "Euripides",
+  //   "country": "Greece",
+  //   "imageLink": "images/medea.jpg",
+  //   "language": "Greek",
+  //   "link": "https://en.wikipedia.org/wiki/Medea_(play)\n",
+  //   "pages": 104,
+  //   "title": "Medea",
+  //   "year": -431,
+  //   "quantity": 100
+  // },
   {
     "author": "William Faulkner",
     "country": "United States",
@@ -472,28 +450,28 @@
     "year": 1952,
     "quantity": 100
   },
-  {
-    "author": "Homer",
-    "country": "Greece",
-    "imageLink": "images/the-iliad-of-homer.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Iliad\n",
-    "pages": 608,
-    "title": "Iliad",
-    "year": -735,
-    "quantity": 100
-  },
-  {
-    "author": "Homer",
-    "country": "Greece",
-    "imageLink": "images/the-odyssey-of-homer.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Odyssey\n",
-    "pages": 374,
-    "title": "Odyssey",
-    "year": -800,
-    "quantity": 100
-  },
+  // {
+  //   "author": "Homer",
+  //   "country": "Greece",
+  //   "imageLink": "images/the-iliad-of-homer.jpg",
+  //   "language": "Greek",
+  //   "link": "https://en.wikipedia.org/wiki/Iliad\n",
+  //   "pages": 608,
+  //   "title": "Iliad",
+  //   "year": -735,
+  //   "quantity": 100
+  // },
+  // {
+  //   "author": "Homer",
+  //   "country": "Greece",
+  //   "imageLink": "images/the-odyssey-of-homer.jpg",
+  //   "language": "Greek",
+  //   "link": "https://en.wikipedia.org/wiki/Odyssey\n",
+  //   "pages": 374,
+  //   "title": "Odyssey",
+  //   "year": -800,
+  //   "quantity": 100
+  // },
   {
     "author": "Henrik Ibsen",
     "country": "Norway",
@@ -923,17 +901,17 @@
     "year": 1609,
     "quantity": 100
   },
-  {
-    "author": "Sophocles",
-    "country": "Greece",
-    "imageLink": "images/oedipus-the-king.jpg",
-    "language": "Greek",
-    "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
-    "pages": 88,
-    "title": "Oedipus the King",
-    "year": -430,
-    "quantity": 100
-  },
+  // {
+  //   "author": "Sophocles",
+  //   "country": "Greece",
+  //   "imageLink": "images/oedipus-the-king.jpg",
+  //   "language": "Greek",
+  //   "link": "https://en.wikipedia.org/wiki/Oedipus_the_King\n",
+  //   "pages": 88,
+  //   "title": "Oedipus the King",
+  //   "year": -430,
+  //   "quantity": 100
+  // },
   {
     "author": "Stendhal",
     "country": "France",
@@ -1022,39 +1000,39 @@
     "year": 1884,
     "quantity": 100
   },
-  {
-    "author": "Valmiki",
-    "country": "India",
-    "imageLink": "images/ramayana.jpg",
-    "language": "Sanskrit",
-    "link": "https://en.wikipedia.org/wiki/Ramayana\n",
-    "pages": 152,
-    "title": "Ramayana",
-    "year": -450,
-    "quantity": 100
-  },
-  {
-    "author": "Virgil",
-    "country": "Roman Empire",
-    "imageLink": "images/the-aeneid.jpg",
-    "language": "Classical Latin",
-    "link": "https://en.wikipedia.org/wiki/Aeneid\n",
-    "pages": 442,
-    "title": "The Aeneid",
-    "year": -23,
-    "quantity": 100
-  },
-  {
-    "author": "Vyasa",
-    "country": "India",
-    "imageLink": "images/the-mahab-harata.jpg",
-    "language": "Sanskrit",
-    "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
-    "pages": 276,
-    "title": "Mahabharata",
-    "year": -700,
-    "quantity": 100
-  },
+  // {
+  //   "author": "Valmiki",
+  //   "country": "India",
+  //   "imageLink": "images/ramayana.jpg",
+  //   "language": "Sanskrit",
+  //   "link": "https://en.wikipedia.org/wiki/Ramayana\n",
+  //   "pages": 152,
+  //   "title": "Ramayana",
+  //   "year": -450,
+  //   "quantity": 100
+  // },
+  // {
+  //   "author": "Virgil",
+  //   "country": "Roman Empire",
+  //   "imageLink": "images/the-aeneid.jpg",
+  //   "language": "Classical Latin",
+  //   "link": "https://en.wikipedia.org/wiki/Aeneid\n",
+  //   "pages": 442,
+  //   "title": "The Aeneid",
+  //   "year": -23,
+  //   "quantity": 100
+  // },
+  // {
+  //   "author": "Vyasa",
+  //   "country": "India",
+  //   "imageLink": "images/the-mahab-harata.jpg",
+  //   "language": "Sanskrit",
+  //   "link": "https://en.wikipedia.org/wiki/Mahabharata\n",
+  //   "pages": 276,
+  //   "title": "Mahabharata",
+  //   "year": -700,
+  //   "quantity": 100
+  // },
   {
     "author": "Walt Whitman",
     "country": "United States",

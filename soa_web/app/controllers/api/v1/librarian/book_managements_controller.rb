@@ -1,7 +1,8 @@
-class Api::V1::BookManagementController < ApplicationController
-  before_action :authenticate_request!
+class Api::V1::Librarian::BookManagementsController < ApplicationController
   skip_before_action :verify_authenticity_token
   before_action -> {pre_processing}
+
+  include Librarian::BookManagement::BookManagementHelper
 
   def create
     render json: @action.status

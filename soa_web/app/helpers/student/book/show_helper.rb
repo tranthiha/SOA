@@ -1,4 +1,4 @@
-module Librarian::BookManagement::ShowHelper
+module Student::Book::ShowHelper
   def process
     get_book
 
@@ -12,7 +12,7 @@ module Librarian::BookManagement::ShowHelper
   def generate_status
     @status = {
       :code    => Settings.code.success,
-      :message => "Thành công",
+      :message => "",
       :data    => @book,
     }
   end

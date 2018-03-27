@@ -7,7 +7,7 @@ class CreateBooks < ActiveRecord::Migration[5.1]
       t.string :language
       t.string :pages
       t.string :title, null: false
-      t.datetime :year
+      t.datetime :publish_date
       t.integer :quantity_in_stock, default: 0
 
       t.timestamps
