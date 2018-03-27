@@ -11,7 +11,7 @@ module Librarian::BookManagement::CreateHelper
 
   def generate_status
     @status = {
-      :code => Settings.code.success,
+      :code    => Settings.code.success,
       :message => "Thành công",
       :data    => @new_book
     }
