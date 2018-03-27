@@ -16,8 +16,11 @@ module Student::BookBorrow::CreateHelper
 
   def generate_status
     @status = {
-      :code => Settings.code.success,
-      :message => "Thành công"
+      :code    => Settings.code.success,
+      :message => "Thành công",
+      :date    => {
+        :book => @book
+      }
     }
   end
 
