@@ -12,7 +12,7 @@ module Librarian::BookManagement::UpdateHelper
 
   def generate_status
     @status = {
-      :code => Settings.code.success,
+      :code    => Settings.code.success,
       :message => "Thành công",
       :data    => @updated_book,
     }
