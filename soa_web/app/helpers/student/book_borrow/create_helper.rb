@@ -18,7 +18,7 @@ module Student::BookBorrow::CreateHelper
     @status = {
       :code    => Settings.code.success,
       :message => "Thành công",
-      :date    => {
+      :data    => {
         :book => @book
       }
     }
