@@ -10,6 +10,10 @@ module Student::BookBorrow::CreateHelper
       ::BookBorrow.create(create_book_borrow_params)
 
       @book = ::Book.find_by(id: @params[:book_id])
+      if @book.quantity_in_stock <= 2
+        raise Exception.new("Không được mượn khi số sách nhỏ hơn 2")
+      end
+
       @book.update_attributes(quantity_in_stock: @book.quantity_in_stock - 1)
     end
   end
